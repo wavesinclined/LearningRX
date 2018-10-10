@@ -18,33 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="xXY-Vz-HqW">
-                                <rect key="frame" x="137.5" y="124" width="94" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="03D-Cg-fpS"/>
-                                    <constraint firstAttribute="width" constant="100" id="PDO-6Y-GY0"/>
-                                </constraints>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-3j-sKk">
-                                <rect key="frame" x="147" y="314" width="82" height="39.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-3j-sKk">
+                                <rect key="frame" x="150.5" y="314" width="75" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQI-1T-rsD">
+                                <rect key="frame" x="228" y="124" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ZCu-E0-xRB"/>
+                                    <constraint firstAttribute="height" constant="40" id="qSW-fR-VRQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16f-ct-7EG">
+                                <rect key="frame" x="80" y="124" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8H6-Jl-Xor"/>
+                                    <constraint firstAttribute="width" constant="80" id="ctS-cM-Eav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="-"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xXY-Vz-HqW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Jcg-Au-zCf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tQI-1T-rsD" secondAttribute="trailing" constant="107" id="DRm-BF-zx2"/>
+                            <constraint firstItem="tQI-1T-rsD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="MYU-kT-kOF"/>
+                            <constraint firstItem="16f-ct-7EG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="cpz-4p-jHn"/>
+                            <constraint firstItem="16f-ct-7EG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="f5K-YS-Xp6"/>
                             <constraint firstItem="PUx-3j-sKk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9z-lQ-lUY"/>
-                            <constraint firstItem="xXY-Vz-HqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixu-AN-Wfw"/>
                             <constraint firstItem="PUx-3j-sKk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pD2-qu-o7C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PTl-iG-Jrc"/>
                     <connections>
-                        <outlet property="counterLabel" destination="PUx-3j-sKk" id="HIR-dV-QlM"/>
-                        <outlet property="stepper" destination="xXY-Vz-HqW" id="2Of-58-hR8"/>
+                        <outlet property="addButton" destination="tQI-1T-rsD" id="r0W-Gj-j6H"/>
+                        <outlet property="minusButton" destination="16f-ct-7EG" id="Lox-Mr-1bk"/>
+                        <outlet property="priceLabel" destination="PUx-3j-sKk" id="Deh-v8-iTM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

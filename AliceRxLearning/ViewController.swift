@@ -8,59 +8,39 @@
 
 import UIKit
 import RxSwift
-import SnapKit
 import RxCocoa
-
 
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
+    var priceValue: Int = 0
     
-    @IBOutlet weak var stepper: UIStepper!
-    
-    @IBOutlet weak var counterLabel: UILabel!
-    
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bindings()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
-    
-    func bindings() {
-        self.stepper.rx.value.asObservable()
-            .map { Int($0).description
-            }.bind(to: self.counterLabel.rx.text)
+   func bindings() {
+        addButton.rx.tap
+            .subscribe(onNext: {
+                print("add button")
+                self.priceValue = self.priceValue + 1
+                self.priceLabel.text = String(self.priceValue)
+            })
+            .disposed(by: disposeBag)
+        
+        minusButton.rx.tap
+            .subscribe(onNext: {
+                print("minus button")
+                self.priceValue = self.priceValue - 1
+                self.priceLabel.text = String(self.priceValue)
+            })
             .disposed(by: disposeBag)
     }
 }
-
-
-
-//extension Reactive where Base: UIStepper {
-//
-//    /// Reactive wrapper for `value` property.
-//    public var value: ControlProperty<Double> {
-//        return base.rx.controlPropertyWithDefaultEvents(
-//            getter: { stepper in
-//                stepper.value
-//        }, setter: { stepper, value in
-//            stepper.value = value
-//        }
-//        )
-//    }
-//
-//    /// Reactive wrapper for `stepValue` property.
-//    public var stepValue: Binder<Double> {
-//        return Binder(self.base) { stepper, value in
-//            stepper.stepValue = value
-//        }
-//    }
-//
-//}
 
 
 
