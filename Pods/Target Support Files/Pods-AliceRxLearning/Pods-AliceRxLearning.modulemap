@@ -1,0 +1,6 @@
+framework module Pods_AliceRxLearning {
+  umbrella header "Pods-AliceRxLearning-umbrella.h"
+
+  export *
+  module * { export * }
+}
