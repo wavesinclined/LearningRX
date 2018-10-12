@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4829E576C4547479789345BA /* Pods_AliceRxLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FC070DE3946DACDBB8B4B5 /* Pods_AliceRxLearning.framework */; };
+		A811D4E0216DD6E60048CA40 /* SayHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A811D4DF216DD6E60048CA40 /* SayHelloViewController.swift */; };
+		A8809ABF216DDD9D002F3E4B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809ABE216DDD9D002F3E4B /* DetailViewController.swift */; };
 		A8863CC0216CC39300297678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8863CBF216CC39300297678 /* AppDelegate.swift */; };
 		A8863CC2216CC39300297678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8863CC1216CC39300297678 /* ViewController.swift */; };
 		A8863CC5216CC39300297678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8863CC3216CC39300297678 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		33730BF6F965B9B2CDA1431E /* Pods-AliceRxLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliceRxLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliceRxLearning/Pods-AliceRxLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		83FC070DE3946DACDBB8B4B5 /* Pods_AliceRxLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliceRxLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A811D4DF216DD6E60048CA40 /* SayHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloViewController.swift; sourceTree = "<group>"; };
+		A8809ABE216DDD9D002F3E4B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A8863CBC216CC39300297678 /* AliceRxLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliceRxLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8863CBF216CC39300297678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8863CC1216CC39300297678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 			children = (
 				A8863CBF216CC39300297678 /* AppDelegate.swift */,
 				A8863CC1216CC39300297678 /* ViewController.swift */,
+				A811D4DF216DD6E60048CA40 /* SayHelloViewController.swift */,
+				A8809ABE216DDD9D002F3E4B /* DetailViewController.swift */,
 				A8863CC3216CC39300297678 /* Main.storyboard */,
 				A8863CC6216CC39700297678 /* Assets.xcassets */,
 				A8863CC8216CC39700297678 /* LaunchScreen.storyboard */,
@@ -208,6 +214,8 @@
 			files = (
 				A8863CC2216CC39300297678 /* ViewController.swift in Sources */,
 				A8863CC0216CC39300297678 /* AppDelegate.swift in Sources */,
+				A811D4E0216DD6E60048CA40 /* SayHelloViewController.swift in Sources */,
+				A8809ABF216DDD9D002F3E4B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
